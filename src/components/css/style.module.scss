@@ -1,0 +1,94 @@
+$orange: #f95700fe;
+$shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$white:white;
+
+
+
+.orange{
+    background-color: $orange;
+  }
+  
+  .orgText{
+    color: $orange;
+  }
+  
+  .btnBtn{
+    background-color: $orange !important;
+    color: $white !important;
+    cursor: pointer !important;
+    width: 150px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+    border: none !important;
+    border-radius: 0px !important;
+    &:hover{
+        background-color: $white !important;
+        color: $orange !important;
+        cursor: pointer !important;
+        border: 1px solid $orange !important;
+        transition: 1s;
+        box-shadow: $shadow;
+    }
+  }
+  
+  
+  .btnRem{
+      @extend .btnBtn;
+        background-color: white !important;
+        color: orangered !important;
+        border: 1px solid orangered !important;
+        transition: 1s;
+
+        &:hover{
+            background-color: $orange !important;
+            color: $white !important;
+            cursor: pointer !important;
+             border: 1px solid $orange !important;
+            transition: 1s;
+            box-shadow: $shadow;
+        }
+  }
+  
+  input,textarea:focus{
+    outline: 0;
+  }
+
+  .searchInput{
+      border: none;
+      border-radius: 5px;
+      color: $orange;
+      font-size: 20px;
+  }
+
+  .modal{
+    background-color: $white;
+    position: absolute;
+    // border: 1px solid $orange;
+    width: 1321px;
+    height: 650px;
+    box-shadow: $shadow;
+    transition: 1s;
+  }
+
+  .fixWidth{
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .titleInp{
+    width: 600px;
+    height: 70px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 22px;
+    color: $orange;
+    // border: 1px solid $orange;
+  }
+
+  .textInp{
+    @extend .titleInp;
+    width: 1000px;
+    height: 250px;
+  }
